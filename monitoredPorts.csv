@@ -1,0 +1,9 @@
+PortName,LocalAddress,LocalPort,RemoteAddress,RemotePort
+Local8080,127.0.0.1,8080,*,*
+Local443,*,443,*,*
+Local1433,*,1433,*,*
+Local1443,*,1443,*,*
+Remote8080,127.0.0.1,8080,RemotePort,8080
+Remote443,*,*,*,443
+RemoteJJK,*,*,*,JJK
+LocalAny192,192*,*,*,*

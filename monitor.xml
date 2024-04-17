@@ -1,0 +1,21 @@
+<monitor>
+    <name>ServerTools</name>
+       <type>managed</type>
+        <description>Monitors various metrics and relays the state to the AppDynamics Controller.</description>
+        <monitor-configuration>     
+
+        </monitor-configuration>
+        <monitor-run-task>
+           <execution-style>periodic</execution-style>
+           <execution-frequency-in-seconds>60</execution-frequency-in-seconds>
+           <execution-timeout-in-secs>45</execution-timeout-in-secs>           
+           <name>Run</name>
+           <type>executable</type>
+           <task-arguments></task-arguments>
+            <executable-task>
+                <type>file</type>
+                <!--  Use only one file element per os-type. -->
+                 <file os-type="windows">server_tools.bat</file>
+           </executable-task>
+         </monitor-run-task>
+</monitor>
